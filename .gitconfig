@@ -7,7 +7,7 @@
   last ='log -1'
   lg="log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(boldblue)<%an>%Creset' --abbrev-commit"
 [http "https://github.com"]
-	proxy = http://172.24.144.1:10809
+	proxy = http://172.24.144.1:1082
 
 
 # other's gitconfig on GitHub
