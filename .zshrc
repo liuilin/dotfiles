@@ -188,9 +188,6 @@ source /usr/share/autojump/autojump.sh
 
 
 
-
-
-
 # Fetch Windows ip address inside WSL environment
 WINDOWS_IP=$(ip route | grep default | awk '{print $3}')
 PROXY_HTTP="http://${WINDOWS_IP}:1082"
@@ -228,6 +225,7 @@ alias proxy=set_proxy
 alias deproxy=unset_proxy
 
 export PATH="$HOME/.poetry/bin:$PATH"
+# for my nvimrc config
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).

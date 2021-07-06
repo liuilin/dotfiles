@@ -238,11 +238,11 @@ cnoremap <M-b> <S-Left>
 cnoremap <M-w> <S-Right>
 
 
-" ===
-" === Searching
-" ===
-noremap - N
-noremap = n
+""" " ===
+""" " === Searching
+""" " ===
+""" noremap - N
+""" noremap = n
 
 
 " ===
@@ -257,13 +257,13 @@ noremap <LEADER>l  <C-w>l
 noremap qf <C-w>o
 
 " Disable the default s key
-noremap s <nop>
+""" noremap s <nop>
 
 " split the screens to up (horizontal), down (horizontal), left (vertical), right (vertical)
-noremap sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
-noremap sj :set splitbelow<CR>:split<CR>
-noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
-noremap sl :set splitright<CR>:vsplit<CR>
+""" noremap sk :set nosplitbelow<CR>:split<CR>:set splitbelow<CR>
+""" noremap sj :set splitbelow<CR>:split<CR>
+""" noremap sh :set nosplitright<CR>:vsplit<CR>:set splitright<CR>
+""" noremap sl :set splitright<CR>:vsplit<CR>
 
 " Resize splits with arrow keys
 noremap <up> :res +5<CR>
