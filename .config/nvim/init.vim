@@ -318,7 +318,7 @@ nnoremap \t :tabe<CR>:-tabmove<CR>:term sh -c 'st'<CR><C-\><C-N>:q<CR>
 noremap <LEADER>/ :set splitbelow<CR>:split<CR>:res +10<CR>:term<CR>
 
 " Press space twice to jump to the next '<++>' and edit it
-noremap <LEADER><LEADER> <Esc>/<++><CR>:nohlsearch<CR>c4l
+noremap <LEADER><TAB> <Esc>/<++><CR>:nohlsearch<CR>c4l
 
 " Spelling Check with <space>sc
 noremap <LEADER>sc :set spell!<CR>
@@ -393,12 +393,12 @@ func! CompileRunGcc()
 endfunc
 
 
+
 " ===
 " === Install Plugins with Vim-Plug
 " ===
 
 call plug#begin('~/.config/nvim/plugged')
-
 " Plug 'LoricAndre/fzterm.nvim'
 
 " Testing my own plugin
@@ -584,6 +584,11 @@ Plug 'lambdalisue/suda.vim' " do stuff like :sudowrite
 
 
 call plug#end()
+
+
+
+
+
 set re=0
 
 " experimental
@@ -754,8 +759,8 @@ imap <C-l> <Plug>(coc-snippets-expand)
 vmap <C-e> <Plug>(coc-snippets-select)
 let g:coc_snippet_next = '<c-e>'
 let g:coc_snippet_prev = '<c-n>'
-imap <C-e> <Plug>(coc-snippets-expand-jump)
 let g:snips_author = 'David Chen'
+imap <C-e> <Plug>(coc-snippets-expand-jump)
 autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 
 
@@ -764,10 +769,10 @@ autocmd BufRead,BufNewFile tsconfig.json set filetype=jsonc
 " ===
 let g:instant_markdown_slow = 0
 let g:instant_markdown_autostart = 0
-" let g:instant_markdown_open_to_the_world = 1
-" let g:instant_markdown_allow_unsafe_content = 1
-" let g:instant_markdown_allow_external_content = 0
-" let g:instant_markdown_mathjax = 1
+let g:instant_markdown_open_to_the_world = 1
+let g:instant_markdown_allow_unsafe_content = 1
+let g:instant_markdown_allow_external_content = 0
+let g:instant_markdown_mathjax = 1
 let g:instant_markdown_autoscroll = 1
 
 
@@ -1141,7 +1146,7 @@ let g:EasyMotion_do_shade = 0
 let g:EasyMotion_smartcase = 1
 " map ' <Plug>(easymotion-overwin-f2)
 " nmap ' <Plug>(easymotion-overwin-f2)
-"map E <Plug>(easymotion-j)
+map <LEADER><LEADER>s <Plug>(easymotion-s)
 "map U <Plug>(easymotion-k)
 "nmap f <Plug>(easymotion-overwin-f)
 "map \; <Plug>(easymotion-prefix)
