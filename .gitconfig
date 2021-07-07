@@ -1417,3 +1417,5 @@
   ### Use with shell alias `gitp = git` ###
   ull = pull
   ush = push
+[credential]
+	helper = store

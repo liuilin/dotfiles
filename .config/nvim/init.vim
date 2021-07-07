@@ -156,7 +156,7 @@ nnoremap Y y$
 
 
 " Copy to system clipboard
-":'<,'>w !wl-copy"" vnoremap Y "+y
+""" :'<,'>w !wl-copy"" vnoremap Y "+y
 vnoremap Y :'<,'>w !wl-copy<CR>
 
 " Indentation
